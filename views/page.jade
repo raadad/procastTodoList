@@ -1,0 +1,11 @@
+extends layout
+block includes
+    script(type='text/coffeescript', src="client.coffee")
+    script(src='js/jquery.js')
+    script(src='js/underscore.js')
+    script(src='js/backbone.js')
+    script(src='js/coffee-script.js')
+    script(src='socket.io/socket.io.js')
+block content
+    #list Loading...
+    a Your session id is #{cookie}  

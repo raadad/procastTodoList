@@ -1,0 +1,10 @@
+extends layout
+block content
+	form(action="/", method="post" ,enctype="application/x-www-form-urlencoded")
+		input(type="text",name="name",placeholder="Username")
+		input(type="password",name="pass",placeholder="Password")
+		input(type="submit", name="action" , value="Login")
+		input(type="submit", name="action" , value="Create Account")
+	div
+		h3 #{acc}
+	a Your session id is #{cookie}
